@@ -174,7 +174,7 @@ class App extends Component {
               )}
             </FormItem>
             <FormItem label="地址"  {...formItemLayout}>
-              {getFieldDecorator('address', {
+               {getFieldDecorator('address', {
                 rules: [{ required: true, message: 'Please input your address!' }],
               })(
                 <Input placeholder="address" />
@@ -198,7 +198,7 @@ export default Form.create()(App);
 
 #### 1.安装依赖
 ````
-npm install koa koa-body koa-cors koa-router sequelize --save
+npm install koa koa-body koa-cors koa-router sequelize mysql2 --save
 ````
 ##### [koa-body](https://www.npmjs.com/package/koa-body) 因为Web应用离不开处理表单(例如用户的添加编辑表单)。本质上，表单就是 POST 方法发送到服务器的键值对。koa-body模块可以用来从 POST 请求的数据体里面提取键值对。
 ##### [koa-cors](https://www.npmjs.com/package/koa-cors) 解决跨域问题
